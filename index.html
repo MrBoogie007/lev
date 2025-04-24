@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Study Abroad Consultant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+</head>
+  <body>
+    <nav>
+      <div id="p1">
+        <img src="logo-dark__1_-removebg-preview.png" alt="">
+      </div>
+      <div id="p2">
+          <button id="b1">Call us 8069361480</button>
+      </div>
+    </nav>
+    <div id="content">
+      <div id="part1">
+        <h3>Take the First Step to</h3>
+        <h3>STUDY ABROAD</h3>
+          <div id="three">
+            <h4><i class="ri-checkbox-circle-line"></i> Courses starting from ₹8 Lakhs*</h4>
+            <h4><i class="ri-checkbox-circle-line"></i> Scholarship worth ₹10,00,000*</h4>
+            <h4><i class="ri-checkbox-circle-line"></i> Offer letter in less than 48 hours*</h4>
+          </div>
+      </div>
+        <div id="part2">
+            <div class="form-container">
+                <h2>Start your Study Abroad Journey</h2>
+                <form id="studyForm">
+                  <input type="text" name="name" placeholder="Enter Full Name*" required>
+                  <input type="email" name="email" placeholder="Enter Email Address*" required>
+                  <input type="tel" name="mobile" placeholder="Mobile Number*" required>
+                  <input type="text" name="pincode" placeholder="Pincode*" required>
+            
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="agreed" id="agreed"> 
+                    I have read and agreed to <a href="#">terms</a> & <a href="#">privacy policy</a>
+                  </label>
+            
+                  <button type="submit">Book your free consultation</button>
+                </form>
+              </div>
+            
+              <script>
+                const form = document.getElementById('studyForm');
+            
+                form.addEventListener('submit', async (e) => {
+                  e.preventDefault();
+                  
+                  const formData = {
+                    name: form.name.value,
+                    email: form.email.value,
+                    mobile: form.mobile.value,
+                    pincode: form.pincode.value,
+                    agreed: form.agreed.checked
+                  };
+            
+                  if (!formData.agreed) {
+                    alert("You must agree to the terms and privacy policy.");
+                    return;
+                  }
+            
+                  try {
+                    const res = await fetch("http://localhost:5000/api/form", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(formData)
+                    });
+            
+                    const data = await res.json();
+                    alert(data.message);
+                    form.reset();
+                  } catch (error) {
+                    alert("Submission failed.");
+                  }
+                });
+              </script>
+            </div> 
+      </div>
+    </div>
+      <div id="second">
+        <div id="a">
+          <div id="wcle">
+            <h1>why choose leverege edu?</h1>
+            <div id="box">
+              <div id="bx1" class="boxes"></div>
+              <div id="bx2" class="boxes"></div>
+              <div id="bx3" class="boxes"></div>
+              <div id="bx4" class="boxes"></div>
+            </div>
+            <div id="text">
+              <div class="texts"><b>850+</b> University Partners</div>
+              <div class="texts"><b>45,000+</b> Success Stories</div>
+              <div class="texts">Scholarship up to <b>50%*</b></div>
+              <div class="texts">Courses starting at <b>₹8 Lakhs*</b></div>
+            </div>
+            </div>
+        </div>
+          <div id="b">
+            <div id="lea">
+                <h1>leverege edu advantage</h1>
+                <div id="logo">
+                    <div id="l1" class="logos"><h6>Finding the Program <br>That’s Right for You</h6></div>
+                    <div id="l2" class="logos"><h6>Curated Expert-led <br>Application Assistance</h6></div>
+                    <div id="l3" class="logos"><h6>English Assessment <br>Test Prep On-the-go</h6></div>
+                </div>
+                <div id="logo2">
+                    <div id="l4" class="logos1"><h6>Hacking thy Interviews <br>& the All-important VISA</h6></div>
+                    <div id="l5" class="logos1"><h6>Solving for <br>Money Money Money!</h6></div>
+                    <div id="l6" class="logos1"><h6>Making Sure You Stay Right, <br>And Stay Well</h6></div>
+                </div>
+              
+      </div>
+      <div id="third"></div>
+    </div>
+   
+        
+  </body>
+</html>

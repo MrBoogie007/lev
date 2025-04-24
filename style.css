@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    /* overflow: hidden; */
+    /* overflow: hidden; */
+    /* position: relative; */
+}
+nav{
+    height: 9vh;
+    width: 100vw;
+    background-color: #FFFFFF;
+    /* background-color: cyan; */
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    gap: 60vw;
+    padding-left: 9.8vw;
+    /* padding-right: 1vw; */
+    align-items: center;
+    position: relative;
+}
+#p1{
+    width: 5.5vw;
+    height: 5vh;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+#p1,img{
+     width: 5.5vw;
+     height: 5vh;
+}
+#p2{
+    width: 13.6vw;
+    height: 4.5vh;
+    /* background-color: yellow; */
+}
+#b1{
+    width: 13.6vw;
+    height: 5vh;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    border: 1px black solid;
+    padding: 12px;
+} 
+#content{
+    width: 100vw;
+    height:100vh;
+    /* background-color: red; */
+    overflow: hidden;
+    background-image: url(https://publicassets.leverageedu.com/abroadConsultantDelhiHero.png);
+    background-size: cover;
+    padding-left: 11vw;
+    padding-right: 11vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#part1{
+    width: 35.6vw;
+    height: 40vh;
+    /* background-color: red; */
+    padding: 0 30px;
+}
+#part1,h3{
+    font-size: 70px;
+    color: #FFFFFF;
+    border-radius: 20px;
+    font-weight: 800;
+}
+#three{
+    width: 22vw;
+    height: 16vh;
+    /* background-color: black; */
+    margin-top: 4vh;
+}
+#three h4{
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+#three h4 i{
+    font-size: 40px;
+    font-weight: 100;
+    color: green;
+}
+#part2{
+    width: 30vw;
+    height: 65vh;
+    /* background-color: red; */
+}
+#second{
+    width: 100vw;
+    height:100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#a{
+    width: 100vw;
+    height:46vh;
+    background-color: #F5FAFE;
+    padding: 11vh 11vw;
+}
+#wcle{
+    /* background-color: gray; */
+    height: 24vh;
+}
+#wcle,h1{
+    color: #000;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 50px;
+    /* overflow: hidden; */
+}
+#box{
+    width: 78vw;
+    height: 10vh;
+    /* background-color: darkcyan; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.boxes{
+    width: 7vw;
+    height: 8vh;
+    /* background-color: black; */
+    margin-top: 5vh;
+    overflow: hidden;
+}
+#bx1{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/handshake.png);
+    object-fit: cover;
+    width: 5.4vw;
+    height: 8vh;
+}
+#bx2{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/trophy.png);
+    object-fit: cover;
+    /* background-size: contain; */
+    width: 4vw;
+    height: 8vh;
+}
+#bx3{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/scholarship.png);
+    object-fit: cover;
+    /* background-size: contain; */
+    width: 7vw;
+    height: 9.5vh;
+}
+#bx4{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/gradCap.png);
+    object-fit: cover;
+    /* background-size: contain; */
+    width: 6.5vw;
+    height:8.5vh;
+}
+#text{
+    width: 78vw;
+    /* height: 22vh; */
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+.texts{
+    width: 19vw;
+    height: 2vh;
+    /* background-color: red; */
+    margin-top: 7.2vh; 
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+#b{
+    width: 100vw;
+    height:56vh;
+    background-color: #FFFFFF;
+    /* background-color: green; */
+    padding: 11vh 11vw;
+}
+#lea,h1{
+    color: #000;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 50px;
+    /* overflow: hidden; */
+}
+#logo{
+    width: 78vw;
+    height: 30vh;
+    /* background-color: darkcyan; */
+    display: flex;
+    align-items: start;
+    /* justify-content: space-between; */
+    gap: 25vw;
+    /* flex-direction: column; */
+}
+.logos{
+    width: 5vw;
+    height: 10vh;
+    /* background-color: black; */
+    margin-top: 4vh;
+}
+#logo2{
+    width: 78vw;
+    height: 10vh;
+    /* background-color: darkcyan; */
+    display: flex;
+    align-items: start;
+    gap: 25vw;
+    /* flex-direction: column; */
+}
+.logos1{
+    width: 5vw;
+    height: 10vh;
+    /* background-color: black; */
+    margin-top: -12vh;
+}
+#l1{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/DreamCourse.png);
+    background-size: cover;
+    width: 5vw;
+    height: 9vh;
+}
+#l2{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/assistance.png);
+    background-size: cover;
+    width: 5vw;
+    height: 9vh;
+}
+#l3{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/testPrep.png);
+    background-size: cover;
+    width: 5vw;
+    height: 9vh;
+}
+#l4{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/visa.png);
+    background-size: cover;
+    width: 5vw;
+    height: 9vh;
+}
+#l5{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/financial.png);
+    background-size: cover;
+    width: 5vw;
+    height: 9vh;
+}
+#l6{
+    background-image: url(https://publicassets.leverageedu.com/studyAbroad/acco.png);
+    background-size: cover;
+    width: 5vw;
+    height: 9vh;
+}
+#wr{
+    width: 78vw;
+    /* height: 22vh; */
+    /* background-color: green; */
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+.wrt{
+    width: 19vw;
+    height: 2vh;
+    /* background-color: red; */
+    margin-top: 7.2vh; 
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+h6{
+    width: 11vw;
+    margin-left: 6vw;
+    margin-top: 3vh;
+    font-size: 23px;
+    display: inline-block;
+    font-weight: 500;
+}
+#third{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    margin-left: -11vw;
+    margin-top: -1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 30vw;
+    height: 65vh;
+    /* max-width: 400px; */
+  }
+  
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    border: 1px solid #ccc;
+    font-size: 25px;
+  }
+  
+  .checkbox-label {
+    font-size: 22px;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    margin-bottom: 4vh;
+  }
+  
+  .checkbox-label a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+#form,button {
+    padding: 12px 2px;
+    background-color: #60a5fa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3b82f6;
+  }
